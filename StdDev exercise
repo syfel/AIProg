@@ -3,14 +3,13 @@ n = int(raw_input('Enter how many elements you want: '))
 for i in range(0, n):
     x = int(raw_input('Enter the numbers into the array: '))
     s.append(x)
-print s
+print "list of elements input: ", s
 def average(s): return sum(s) * 1.0 / len(s)
 
 avg = average(s)
 print "average is ",avg
 
 variance = map(lambda x: (x - avg)**2, s)
-variance
 
 average(variance)
 print "variance is ",variance
